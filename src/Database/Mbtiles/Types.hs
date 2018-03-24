@@ -146,7 +146,6 @@ tilesColumns = [
 
 requiredMeta = [
     "name"
-  , "type"
   , "version"
   , "description"
   , "format"

@@ -34,7 +34,7 @@ newTileQuery = " insert into tiles                              \
 
 tableExistsQuery :: Query
 tableExistsQuery = " select count(name) from sqlite_master \
-                   \ where type='table' AND name=?"
+                   \ where type in ('table', 'view') AND name=?"
 
 tableInfoQuery :: Text -> Query
 tableInfoQuery t = "PRAGMA table_info(" <>
